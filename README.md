@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/testimonialsgridsectionmain-SJKLuSrUc](https://your-solution-url.com)
+- Live Site URL: [https://pharaohmak.github.io/testimonials-grid-section-main/](https://pharaohmak.github.io/testimonials-grid-section-main/)
 
 ## My process
 
