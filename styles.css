@@ -1,0 +1,160 @@
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+    height: 100vh;
+    width: auto;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "card";
+    height: auto;
+    grid-auto-flow: auto;
+}
+
+.card {
+    grid-area: card;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "daniel daniel johnathan kira" "jeanette patrick patrick kira ";
+    grid-gap: 1em;
+    justify-content: space-evenly;
+    margin: 180px;
+    background-color: whitesmoke;
+    padding: 10em;
+}
+
+.daniel {
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background-color: var(--moderate-violet);
+    border-radius: 12px;
+    color: white;
+}
+
+.daniel .header {
+    display: flex;
+    line-height: 0.5em;
+    padding-bottom: 1em;
+}
+
+.daniel img {
+    display: flex;
+    border: 5px solid var(--moderate-violet);
+}
+
+.johnathan {
+    grid-column: 3;
+    grid-row: 1/3;
+    background-color: var(--very-dark-grayish-blue);
+    border-radius: 12px;
+    color: white;
+}
+
+.johnathan .header {
+    display: flex;
+    line-height: 0.5em;
+}
+
+.kira {
+    grid-column: 4;
+    grid-row: 1/5;
+    background-color: var(--white);
+    border-radius: 12px;
+    color: black;
+}
+
+.kira .header {
+    line-height: 0.5em;
+}
+
+
+.kira img {
+    float: left;
+
+}
+
+.jeanette {
+    grid-column: 1;
+    grid-row: 3/5;
+    background-color: var(--white);
+    border-radius: 12px;
+    color: black;
+}
+
+.jeanette .header {
+    display: flex;
+    line-height: 0.5em;
+}
+
+.jeanette img {
+    float: left;
+}
+
+.patrick {
+    grid-column: 2/4;
+    grid-row: 3/5;
+    background-color: var(--very-dark-blackish-blue);
+    border-radius: 12px;
+    color: white;
+}
+
+.patrick img {
+    float: left;
+    border: 5px solid var(--moderate-violet);
+
+}
+
+.patrick .header {
+    line-height: 0.5em;
+}
+
+.daniel,
+.johnathan,
+.kira,
+.jeanette,
+.patrick {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+
+img {
+    height: 30px;
+    border-radius: 50%;
+    margin: 1em;
+    padding: 0px;
+}
+
+
+.testimonial {
+    padding: 0.5em;
+}
+
+
+h2 {
+    padding-left: .5em;
+    font-weight: 500;
+}
+
+p {
+    color: var(--light-gray);
+}
